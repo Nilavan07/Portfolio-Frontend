@@ -1,0 +1,27 @@
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .theme-toggle:hover {
+    background: var(--primary);
+    color: white;
+  }
+  
+  .theme-toggle svg {
+    font-size: 1rem;
+  }
+  
+  /* Dark mode specific styles */
+  [data-theme='dark'] .theme-toggle:hover {
+    background: var(--primary-dark);
+  }
